@@ -1,0 +1,15 @@
+Entrada 1 com uma thread: 0 milisegundos
+Entrada 2 com uma thread: Entre 7 e 13 milisegundos
+Entrada 3 com uma thread: Entre 277 e 303 milisegundos
+
+Entrada 1 com duas thread: Entre 0 e 1 milisegundo
+Entrada 2 com duas thread: Entre 9 e 28 milisegundos
+Entrada 3 com duas thread: Entre 176 e 199 milisegundos
+
+Entrada 1 com três thread: 0 e 1 milisegundo
+Entrada 2 com três thread: Entre 9 e 20 milisegundos
+Entrada 3 com três thread: Entre 215 e 249 milisegundos
+
+Entrada 1 com quatro thread: Entre 1 e 3 milisegundos
+Entrada 2 com quatro thread: Entre 11 e 21 milisegundos
+Entrada 3 com quatro thread: Entre 217 e 271 milisegundos
