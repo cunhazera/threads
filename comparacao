@@ -13,3 +13,7 @@ Entrada 3 com três thread: Entre 215 e 249 milisegundos
 Entrada 1 com quatro thread: Entre 1 e 3 milisegundos
 Entrada 2 com quatro thread: Entre 11 e 21 milisegundos
 Entrada 3 com quatro thread: Entre 217 e 271 milisegundos
+
+
+Eu tentei tirar alguns .join() do código para ver se a performance iria melhorar.
+Mas percebi que pode dar problema se retirar todos e não consigo validar os valores, porque ocupam muito mais espaço do que minha tela consegue mostrar hahahaha

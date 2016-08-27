@@ -49,7 +49,6 @@ public class Atividade2 {
 			MultiplicaMatriz mult = new MultiplicaMatriz(inicioT1, fimT1, n, a, b, c);
 			Thread oneThread = new Thread(mult);
 			oneThread.start();
-			oneThread.join();
 		}
 
 		if (threads == 2) {
@@ -67,8 +66,6 @@ public class Atividade2 {
 			threadTwo.start();
 
 			threadOne.join();
-			threadTwo.join();
-
 		}
 
 		if (threads == 3) {
@@ -92,8 +89,6 @@ public class Atividade2 {
 
 			threadOne.join();
 			threadTwo.join();
-			threadThree.join();
-
 		}
 
 		if (threads == 4) {
@@ -122,9 +117,6 @@ public class Atividade2 {
 
 			threadOne.join();
 			threadTwo.join();
-			threadThree.join();
-			threadFour.join();
-
 		}
 
 	}
