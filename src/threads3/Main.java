@@ -25,16 +25,39 @@ public class Main {
 			thread.start();
 		}
 
-		for (int i = 0; i < readFile.length; i++) {
-			totalCompras += readFile[i].getTotalCompras();
-			totalVendas += readFile[i].getTotalVendas();
-			balanco = totalVendas - totalCompras;
+		for (Thread thread : threads) {
+			thread.join();
 		}
-		
+
 		System.out.println(totalCompras);
 		System.out.println(totalVendas);
+		balanco = totalVendas - totalCompras;
 		System.out.println(balanco);
 
+	}
+
+	public static double getTotalCompras() {
+		return totalCompras;
+	}
+
+	public static void setTotalCompras(double totalCompras) {
+		Main.totalCompras = totalCompras;
+	}
+
+	public static synchronized double getTotalVendas() {
+		return totalVendas;
+	}
+
+	public static synchronized void setTotalVendas(double totalVendas) {
+		Main.totalVendas = totalVendas;
+	}
+
+	public synchronized static double getBalanco() {
+		return balanco;
+	}
+
+	public synchronized static void setBalanco(double balanco) {
+		Main.balanco = balanco;
 	}
 
 }
